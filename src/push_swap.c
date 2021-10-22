@@ -6,12 +6,11 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 10:30:52 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/22 10:34:10 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/22 10:43:09 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
-#include <stdio.h>
 
 int	main(int argc, char **argv)
 {
