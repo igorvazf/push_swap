@@ -1,7 +1,7 @@
-NAME = push_swap
-CC = clang
-CFLAGS = -Wall -Werror -Wextra
-RM = rm -rf
+NAME =		push_swap
+CC =		clang
+CFLAGS =	-Wall -Werror -Wextra
+RM =		rm -rf
 
 LIBFT_DIR =	./libft
 LIBFT =		$(LIBFT_DIR)/libft.a
@@ -29,10 +29,10 @@ clean:
 			$(MAKE) -C $(LIBFT_DIR) clean
 			$(RM) $(OBJECTS)
 
-fclean:			clean
-				$(MAKE) -C $(LIBFT_DIR) fclean
-				$(RM) $(NAME)
+fclean:		clean
+			$(MAKE) -C $(LIBFT_DIR) fclean
+			$(RM) $(NAME)
 
-re:				fclean all
+re:			fclean all
 
-.PHONY:			all clean fclean re libft minilibx bonus
+.PHONY:		all clean fclean re libft minilibx bonus
