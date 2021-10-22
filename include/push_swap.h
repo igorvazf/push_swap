@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: igvaz-fe <igvaz-fe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 10:31:42 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/22 10:35:38 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/22 15:49:33 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
+
 # include <stdlib.h>
 # include <unistd.h>
 # include "../libft/libft.h"
