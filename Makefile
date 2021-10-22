@@ -8,7 +8,10 @@ LIBFT =		$(LIBFT_DIR)/libft.a
 
 SRC_FILES =	push_swap.c \
 			init.c \
-			validate.c
+			validate.c \
+			operations.c \
+			operations_double.c \
+			sort.c
 
 SRC =		$(addprefix src/, $(SRC_FILES))
 
