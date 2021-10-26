@@ -6,13 +6,13 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 10:31:02 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/22 10:34:50 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/25 22:30:52 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-t_stack	*create_stack(int capacity)
+t_stack	*create_stack(int capacity, char c)
 {
 	t_stack	*stack;
 
@@ -22,6 +22,7 @@ t_stack	*create_stack(int capacity)
 	stack->capacity = capacity;
 	stack->top = -1;
 	stack->stack = malloc(capacity * sizeof(int));
+	stack->c = c;
 	return (stack);
 }
 

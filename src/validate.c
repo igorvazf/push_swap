@@ -6,13 +6,28 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 10:31:12 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/22 10:35:07 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/25 22:23:08 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-int	is_integer(char **argv)
+int	is_sorted(t_stack *stack)
+{
+	int	i;
+
+	i = stack->top;
+	while (stack->stack[i] && stack->stack[i - 1])
+	{
+		if (stack->stack[i] < stack->stack[i - 1])
+			i--;
+		else
+			return (0);
+	}
+	return (1);
+}
+
+static int	is_integer(char **argv)
 {
 	int	i;
 	int	j;
@@ -34,7 +49,7 @@ int	is_integer(char **argv)
 	return (1);
 }
 
-int	is_in_range(char **argv)
+static int	is_in_range(char **argv)
 {
 	int	i;
 
@@ -48,7 +63,7 @@ int	is_in_range(char **argv)
 	return (1);
 }
 
-int	is_duplicate(char **argv)
+static int	is_duplicate(char **argv)
 {
 	int	holder;
 	int	i;
