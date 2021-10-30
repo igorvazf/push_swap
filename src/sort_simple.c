@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/25 22:10:36 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/30 17:08:08 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/30 17:56:04 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,29 @@
 
 void	short_sort(t_stack *stack)
 {
-	if ((stack->stack[0] > stack->stack[1])
-		&& (stack->stack[0] > stack->stack[2]))
-		swap(stack);
-	else if ((stack->stack[0] < stack->stack[1])
-		&& (stack->stack[0] < stack->stack[2])
-		&& (stack->stack[2] > stack->stack[1]))
+	if (!is_sorted(stack))
 	{
-		rotate(stack);
-		swap(stack);
-	}
-	else if ((stack->stack[0] < stack->stack[1])
-		&& (stack->stack[0] < stack->stack[2]))
-		reverse_rotate(stack);
-	else if ((stack->stack[0] > stack->stack[1])
-		&& (stack->stack[0] < stack->stack[2]))
-		rotate(stack);
-	else
-	{
-		swap(stack);
-		rotate(stack);
+		if ((stack->stack[0] > stack->stack[1])
+			&& (stack->stack[0] > stack->stack[2]))
+			swap(stack);
+		else if ((stack->stack[0] < stack->stack[1])
+			&& (stack->stack[0] < stack->stack[2])
+			&& (stack->stack[2] > stack->stack[1]))
+		{
+			rotate(stack);
+			swap(stack);
+		}
+		else if ((stack->stack[0] < stack->stack[1])
+			&& (stack->stack[0] < stack->stack[2]))
+			reverse_rotate(stack);
+		else if ((stack->stack[0] > stack->stack[1])
+			&& (stack->stack[0] < stack->stack[2]))
+			rotate(stack);
+		else
+		{
+			swap(stack);
+			rotate(stack);
+		}
 	}
 }
 
