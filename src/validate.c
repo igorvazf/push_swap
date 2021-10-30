@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 10:31:12 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/25 22:23:08 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/30 17:13:02 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	is_sorted(t_stack *stack)
 	int	i;
 
 	i = stack->top;
-	while (stack->stack[i] && stack->stack[i - 1])
+	while (i >= 1)
 	{
 		if (stack->stack[i] < stack->stack[i - 1])
 			i--;

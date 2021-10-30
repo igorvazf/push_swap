@@ -12,7 +12,10 @@ SRC_FILES =	push_swap.c \
 			operations.c \
 			operations_double.c \
 			sort.c \
-			sort_simple.c
+			sort_simple.c \
+			sort_complex.c \
+			sort_utils.c \
+			movements.c
 
 SRC =		$(addprefix src/, $(SRC_FILES))
 

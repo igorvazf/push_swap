@@ -6,7 +6,7 @@
 /*   By: igvaz-fe <igvaz-fe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 10:31:42 by igvaz-fe          #+#    #+#             */
-/*   Updated: 2021/10/25 22:31:05 by igvaz-fe         ###   ########.fr       */
+/*   Updated: 2021/10/30 17:13:52 by igvaz-fe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,6 @@ typedef struct s_stack
 	char	c;
 }	t_stack;
 
-void	init_stack(t_stack *stack, char **argv);
-t_stack	*create_stack(int capacity, char c);
 int		validate(char **argv);
 void	swap(t_stack *stack);
 void	push(t_stack *stack_src, t_stack *stack_dst);
@@ -39,7 +37,20 @@ void	double_swap(t_stack *stack_a, t_stack *stack_b);
 void	double_rotate(t_stack *stack_a, t_stack *stack_b);
 void	double_reverse_rotate(t_stack *stack_a, t_stack *stack_b);
 void	sort(t_stack *stack_a, t_stack *stack_b);
+void	complex_sort(t_stack *stack_a, t_stack *stack_b);
+int		is_b_sorted(t_stack *stack);
+int		find_smaller(t_stack *stack);
+int		find_higher(t_stack *stack);
+void	simple_sort(t_stack *stack_a, t_stack *stack_b);
 int		is_sorted(t_stack *stack);
-void	simple_sort(t_stack *stack);
+void	init_stack(t_stack *stack, char **argv);
+t_stack	*create_stack(int capacity, char c);
+int		get_moves(t_stack *stack_a, int value);
+int		get_position(t_stack *stack_a, int moves, int value);
+void	moves_one(t_stack *stack_a, t_stack *stack_b, int idx_a, int idx_b);
+void	moves_two(t_stack *stack_a, t_stack *stack_b, int idx_a, int idx_b);
+void	moves_three(t_stack *stack_a, t_stack *stack_b, int idx_a, int idx_b);
+void	moves_four(t_stack *stack_a, t_stack *stack_b, int idx_a, int idx_b);
+void	moves_five(t_stack *stack_a);
 
 #endif
