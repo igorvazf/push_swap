@@ -39,8 +39,10 @@ pa
 | rrr       | executa rra e rrb ao mesmo tempo |
 
 ### Repositórios úteis
-[Push_Swap Tester](https://github.com/laisarena/push_swap_tester) by [Lais Arena](https://github.com/laisarena);
-[Push_Swap Visualizer](https://github.com/o-reo/push_swap_visualizer) by [Emmanuel Ruaud](https://github.com/o-reo);
+
+[Push_Swap Tester](https://github.com/laisarena/push_swap_tester) by [Lais Arena](https://github.com/laisarena)
+
+[Push_Swap Visualizer](https://github.com/o-reo/push_swap_visualizer) by [Emmanuel Ruaud](https://github.com/o-reo)
 
 
 #### More about School 42 you can find here: https://en.wikipedia.org/wiki/42_(school)
