@@ -54,7 +54,7 @@ void	send_back_to_a(t_stack *stack_a, t_stack *stack_b)
 			moves = get_moves(stack_a, stack_b->stack[i]) + (i + 1);
 		}
 	}
-	i = get_position (stack_a, moves, stack_b->stack[pos_b]);
+	i = get_position(stack_a, moves, stack_b->stack[pos_b]);
 	do_movements(stack_a, stack_b, i, pos_b);
 }
 
