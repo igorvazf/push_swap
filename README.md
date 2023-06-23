@@ -45,4 +45,4 @@ pa
 [Push_Swap Visualizer](https://github.com/o-reo/push_swap_visualizer) by [Emmanuel Ruaud](https://github.com/o-reo)
 
 
-#### More about School 42 you can find here: https://en.wikipedia.org/wiki/42_(school)
+#### Mais informações sobre a Escola 42 (inglês): https://en.wikipedia.org/wiki/42_(school)
